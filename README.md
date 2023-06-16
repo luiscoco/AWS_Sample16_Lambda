@@ -37,7 +37,8 @@ This example application does the following:
 }
 ```
 
-IMPORTANT!: Before you can run the getting started with Lambda scenario, you must upload
+## Important NOTE
+Before you can run the getting started with Lambda scenario, you must upload
 the following two files to an Amazon Simple Storage Service (Amazon S3) bucket that you
 own. In the above settings.json file we set the "BucketName" for the S3 bucket:
 
