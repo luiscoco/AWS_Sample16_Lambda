@@ -22,6 +22,28 @@ This example application does the following:
 
 9.Deletes the IAM role.
 
+## Review and update the information in the settings.json file
+
+```
+{
+    "FunctionName": "LambdaExample",
+    "Handler": "LambdaIncrement::LambdaIncrement.Function::FunctionHandler",
+    "UpdatedHandler": "LambdaCalculator::LambdaCalculator.Function::FunctionHandler",
+    "BucketName": "doc-example-bucketluiscocoenriquez",
+    "IncrementKey": "LambdaIncrement.zip",
+    "CalculatorKey": "LambdaCalculator.zip",
+    "RoleName": "lambda-support",
+    "PolicyArn": "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+}
+```
+
+IMPORTANT!: Before you can run the getting started with Lambda scenario, you must upload
+the following two files to an Amazon Simple Storage Service (Amazon S3) bucket that you
+own. In the above settings.json file we set the "BucketName" for the S3 bucket:
+
+ * [LambdaIncrement.zip](LambdaIncrement.zip)
+ * [LambdaCalculator.zip](LambdaCalculator.zip)
+
 ## Overview
 
 Shows how to use the AWS SDK for .NET to work with AWS Lambda.
